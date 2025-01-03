@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kişisel web siteme hoş geldiniz. Hakkımda daha fazla bilgi alın ve yeteneklerimi keşfedin."
+    />
+    <meta
+      name="keywords"
+      content="kişisel web sitesi, hakkımda, yetenekler, iletişim"
+    />
+    <meta property="og:title" content="--Ana Sayfa--" />
+    <meta
+      property="og:description"
+      content="Kişisel web siteme hoş geldiniz. Hakkımda daha fazla bilgi alın ve yeteneklerimi keşfedin."
+    />
+    <meta property="og:image" content="logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <title>--Ana Sayfa--</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Lavishly+Yours&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="icons8-home-50.png" type="image/x-icon" />
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PGDE10RTTW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-PGDE10RTTW");
+    </script>
+  </head>
+  <body>
+    <div class="pyro">
+      <div class="before"></div>
+      <div class="after"></div>
+    </div>
+
+    <div class="fade-in">
+      <div class="overlay">
+        <div class="logo">
+          <img src="logo.png" width="430px" height="430px" alt="Logom" />
+        </div>
+        <div class="foto-container"></div>
+        <nav class="menu-bar">
+          <a href="index.html">AnaSayfa</a>
+          <a href="about.html">Hakkımda</a>
+          <a href="skills.html">Yeteneklerim</a>
+          <a href="contack.html">İletişim</a>
+        </nav>
+        <div class="typing-text-container">
+          <div class="typing-text">
+            <span class="white">KİŞİSEL WEB SİTEME HOŞ GELDİNİZ </span><br />
+            <span class="white">Ben KİMİM?</span>
+          </div>
+          <div class="arrow-container">
+            <center><div class="arrow"></div></center>
+          </div>
+          <center>
+            <a href="about.html" class="btn-53">
+              <div class="original">Tıkla</div>
+              <div class="letters">
+                <span>T</span>
+                <span>I</span>
+                <span>K</span>
+                <span>L</span>
+                <span>A</span>
+              </div>
+            </a>
+          </center>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    window.onload = function () {
+      const popup = document.getElementById("popup-card");
+      if (popup) {
+        setTimeout(() => {
+          popup.classList.remove("hidden");
+          startCountdown();
+        }, 2000);
+      } else {
+        console.warn("Popup element not found!");
+      }
+
+      createSnowflakes();
+    };
+
+    function closePopup() {
+      const popup = document.getElementById("popup-card");
+      if (popup) {
+        popup.classList.add("hidden");
+      } else {
+        console.warn("Popup element not found!");
+      }
+    }
+    function createSnowflakes() {
+      const numFlakes = 30;
+      const colors = ["#ffffff", "#d4f1f9", "#e8f8ff"];
+
+      for (let i = 0; i < numFlakes; i++) {
+        const flake = document.createElement("div");
+        flake.classList.add("snowflake");
+        flake.innerHTML = "❄";
+        document.body.appendChild(flake);
+
+        const size = Math.random() * 10 + 10 + "px";
+        flake.style.left = Math.random() * 100 + "vw";
+        flake.style.fontSize = size;
+        flake.style.color = colors[Math.floor(Math.random() * colors.length)];
+        flake.style.animationDuration = Math.random() * 3 + 2 + "s";
+        flake.style.animationDelay = Math.random() * 5 + "s";
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+body {
+    background-color: #1e1d18;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+.logo {
+    width: 50%;
+    height: 10%;
+    position: absolute;
+    left: 0;
+    margin-bottom: 45%;
+}
+
+.logo img {
+    position: absolute;
+    margin-top: -33%;
+    margin-left: -5%;
+}
+
+.menu-bar {
+    position: absolute;
+    top: 0;
+    margin-top: 2%;
+    right: 0;
+    margin-right: 2%;
+    word-spacing: 25px;
+}
+
+.menu-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    letter-spacing: 3px;
+}
+
+.menu-bar a:hover {
+    color: #bbb9b9;
+    transition: color 0.4s ease;
+}
+
+.menu-bar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: gray;
+    transition: width 0.4s ease;
+}
+
+.menu-bar a:hover::after {
+    width: 100%;
+}
+
+.skills-text {
+    display: grid;
+    font-family: "Audiowide", cursive;
+    color: #666161;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.Html-container,
+.Css-container,
+.JavaScript-container,
+.Php-container,
+.python-container,
+.figma-container,
+.MySQL-container,
+.mssql-container,
+.Angular-container,
+.React-container,
+.React-native,
+.TypeScript-container {
+    height: 100px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 100px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.Html-container {
+    background-image: url("html.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Css-container {
+    background-image: url("laptop-2620118_1920.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.JavaScript-container {
+    background-image: url("javascript-4523100_1920.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+    color: black;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Php-container {
+    background-image: url("pexels-realtoughcandy-11035390.jpg");
+    background-size: cover;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.python-container {
+    background-image: url("0eb915ca1a4bef3ab0a874f980859584.png");
+    background-size: cover;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.figma-container {
+    background-image: url("Figma0.jpg");
+    background-size: cover;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.MySQL-container {
+    background-image: url("images.png");
+    background-size: cover;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mssql-container {
+    background-image: url("5caeeca914578.png");
+    background-size: cover;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Angular-container {
+    background-image: url("qW5sXZSe_7w815bbdJh3mwhzBxyEdK13fFyRs3_8ZdQ.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+}
+
+.React-container {
+    background-image: url("react-nedir.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+}
+
+.React-native {
+    background-image: url("rnative.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+}
+
+.TypeScript-container {
+    background-image: url("typescript-nedir.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+}
+
+footer {
+    margin-left: 40%;
+    margin-top: 5%;
+    color: white;
+}
+
+.skill-container {
+    width: 100%;
+    height: 100px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill-container:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.skill-container:active {
+    transform: scale(1);
+}
+
+#html-container {
+    background-image: url("html.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#css-container {
+    background-image: url("laptop-2620118_1920.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#javascript-container {
+    background-image: url("javascript-4523100_1920.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+    color: black;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#php-container {
+    background-image: url("pexels-realtoughcandy-11035390.jpg");
+    background-size: cover;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#python-container {
+    background-image: url("0eb915ca1a4bef3ab0a874f980859584.png");
+    background-size: cover;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#figma-container {
+    background-image: url("Figma0.jpg");
+    background-size: cover;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#mysql-container {
+    background-image: url("images.png");
+    background-size: cover;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#mssql-container {
+    background-image: url("5caeeca914578.png");
+    background-size: cover;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#angular-container {
+    background-image: url("qW5sXZSe_7w815bbdJh3mwhzBxyEdK13fFyRs3_8ZdQ.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+}
+#react-container {
+    background-image: url("react-nedir.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+}
+#react-native-container {
+    background-image: url("rnative.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+}
+#typescript-container {
+    background-image: url("typescript-nedir.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 50%;
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 100;
+  }
+  
+  .popup-content {
+    text-align: center;
+  }
+  
+  .popup .close-btn {
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+/* Media-Screen Bölümü */
+@media (max-width: 767px) {
+    .menu-bar {
+        margin-right: 5%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu-bar a {
+        font-size: x-small;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    footer {
+        font-size: x-small;
+        margin-left: 25%;
+    }
+
+    .JavaScript-container {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .MySQL-container {
+        background-size: cover;
+        background-position: center;
+    }
+    
+}
+
+@media (max-width: 393px) and (max-height: 851px) and (orientation: portrait) {
+    .logo {
+        display: none;
+    }
+
+    .menu-bar a {
+        font-size: xx-small;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    footer {
+        font-size: x-small;
+        margin-left: 24%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo {
+        margin-top: 4%;
+    }
+}
+
+@media (max-width: 1440px) and (min-width: 720px) {
+    .logo {
+        margin-top: 1%;
+    }
+}
+
+/* Media-Screen Bölümü */
